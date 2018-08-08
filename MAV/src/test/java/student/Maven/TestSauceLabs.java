@@ -14,7 +14,6 @@ public class TestSauceLabs {
 	public static final String ACCESS_KEY="574552e0-4b18-4ba6-95e4-a9ef962c71a9";//copy this key from saucelabs account
 	public static final String URL="https://"+USERNAME+":"+ACCESS_KEY+"@ondemand.saucelabs.com:443/wd/hub";
 	public static void main(String[] args) throws Exception {
-		new DesiredCapabilities();
 		DesiredCapabilities caps=DesiredCapabilities.firefox();
 		caps.setCapability("platform","Windows 10");
 		caps.setCapability("Version","52.0");
